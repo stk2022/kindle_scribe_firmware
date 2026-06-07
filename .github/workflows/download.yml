@@ -19,7 +19,7 @@ jobs:
       - name: Split into parts
         run: |
           mkdir -p source
-          split -b 90m kindle_voyage_5.13.6.bin firmware/Kindle_src_5.19.4.0.1.part
+          split -b 90m kindle_voyage_5.13.6.bin source/Kindle_src_5.19.4.0.1.part
           ls -lh source/
 
       - name: Commit and push parts
